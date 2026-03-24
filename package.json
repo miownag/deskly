@@ -1,0 +1,35 @@
+{
+  "name": "deskly-mcp",
+  "version": "0.1.0",
+  "description": "Enable your AI Agents see and operate your computer.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "deskly-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --target=node --outdir=dist --external sharp --external screenshot-desktop --external robotjs && chmod 755 dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miownag/deskly.git"
+  },
+  "keywords": ["GUI", "MCP"],
+  "author": "Mio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miownag/deskly/issues"
+  },
+  "homepage": "https://github.com/miownag/deskly#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "robotjs": "^0.7.0",
+    "screenshot-desktop": "^1.12.7",
+    "sharp": "^0.33.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2"
+  }
+}
