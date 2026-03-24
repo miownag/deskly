@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/miownag/deskly.git"
   },
-  "keywords": ["GUI", "MCP"],
+  "keywords": [
+    "GUI",
+    "MCP"
+  ],
   "author": "Mio",
   "license": "MIT",
   "bugs": {
@@ -31,5 +34,9 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "typescript": "^6.0.2"
-  }
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ]
 }
